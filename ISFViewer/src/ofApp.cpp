@@ -6,19 +6,6 @@ void ofApp::setup(){
 	
 	syphonDir.setup();
 	
-//	ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 0);
-//	ImGui::PushStyleVar(ImGuiStyleVar_IndentSpacing, 22);
-	
-	
-	ImGuiStyle *style = &ImGui::GetStyle();
-	style->WindowRounding = 0;
-	style->ScrollbarSize = 3;
-	style->ScrollbarRounding = 0;
-	style->FramePadding = ImVec2(6, 4);
-	style->ItemSpacing = ImVec2(4, 8);
-	style->FrameRounding = 2;
-	style->GrabRounding = 2;
-	
 	ImGuiIO * io = &ImGui::GetIO();
 	ImFontConfig font_config;
 	font_config.OversampleH = 1;
@@ -28,8 +15,16 @@ void ofApp::setup(){
 	gui.setup();
 
 	gui.setTheme(new GuiTheme());
-
-
+	
+	ImGuiStyle *style = &ImGui::GetStyle();
+	style->WindowRounding = 0;
+	style->ScrollbarSize = 3;
+	style->ScrollbarRounding = 0;
+	style->FramePadding = ImVec2(6, 4);
+	style->ItemSpacing = ImVec2(4, 8);
+	style->FrameRounding = 2;
+	style->GrabRounding = 2;
+	style->Colors[ImGuiCol_WindowBg]              = ImVec4(1.00f, 1.00f, 1.00f, 0.88f);
 }
 
 //--------------------------------------------------------------
@@ -53,18 +48,32 @@ void ofApp::draw(){
 		ImGui::SetWindowPos(ImVec2(0, 0));
 		ImGui::SetWindowSize(ImVec2(ImGui::GetWindowWidth(), ofGetHeight()));
 		
+		
+		// Syphon Inputs
+		
+		string serverNames = "";
+		
 		for (auto server : syphonDir.getServerList()) {
 			
-			ss.str("");
+			
 			
 			if (server.serverName != "") {
-				ss << server.appName << " - " << server.serverName;
+				serverNames += server.appName + " - " + server.serverName;
 			} else {
-				ss << server.appName;
+				serverNames += server.appName;
 			}
 			
-			ImGui::RadioButton(ss.str().c_str(), false);
-			
+			serverNames += "\0";
+		}
+		
+		serverNames += "\0";
+		
+		const char* serverItems = serverNames.c_str();
+		static int index = -1;
+
+		
+		if (ImGui::Combo("server", &index, serverItems)) {
+			ofLogNotice() << index;
 		}
 		
 		
