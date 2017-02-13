@@ -13,6 +13,16 @@
 		4D508D34156E7076531D9084 /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D58DCB2C0AEFDE6171E29540 /* Syphon.framework */; };
 		5C2607C471F8D48C0036C56E /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CF9B1FD213484DDDB7AE362 /* imgui.cpp */; };
 		8D60C222CBD3F869382832E9 /* ofxSyphonServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 32D6F27DC6308427F9A278C1 /* ofxSyphonServer.mm */; };
+		929625931E50ADCA006D104E /* DDMathParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9296258F1E50ADCA006D104E /* DDMathParser.framework */; };
+		929625941E50ADCA006D104E /* VVBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929625901E50ADCA006D104E /* VVBasics.framework */; };
+		929625951E50ADCA006D104E /* VVBufferPool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929625911E50ADCA006D104E /* VVBufferPool.framework */; };
+		929625961E50ADCA006D104E /* VVISFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929625921E50ADCA006D104E /* VVISFKit.framework */; };
+		929625971E50ADDA006D104E /* DDMathParser.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9296258F1E50ADCA006D104E /* DDMathParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		929625981E50ADDA006D104E /* VVBasics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 929625901E50ADCA006D104E /* VVBasics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		929625991E50ADDA006D104E /* VVBufferPool.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 929625911E50ADCA006D104E /* VVBufferPool.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9296259A1E50ADDA006D104E /* VVISFKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 929625921E50ADCA006D104E /* VVISFKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9296259D1E50AEDA006D104E /* ISFScene.h in Sources */ = {isa = PBXBuildFile; fileRef = 9296259C1E50AEB9006D104E /* ISFScene.h */; };
+		9296259F1E50AFF7006D104E /* ISFScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9296259E1E50AFF7006D104E /* ISFScene.m */; };
 		92ED8E191E4F910300203D0C /* BaseEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92ED8E0A1E4F910300203D0C /* BaseEngine.cpp */; };
 		92ED8E1A1E4F910300203D0C /* BaseTheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92ED8E0C1E4F910300203D0C /* BaseTheme.cpp */; };
 		92ED8E1B1E4F910300203D0C /* EngineGLFW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92ED8E0E1E4F910300203D0C /* EngineGLFW.cpp */; };
@@ -51,6 +61,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				929625971E50ADDA006D104E /* DDMathParser.framework in CopyFiles */,
+				929625981E50ADDA006D104E /* VVBasics.framework in CopyFiles */,
+				929625991E50ADDA006D104E /* VVBufferPool.framework in CopyFiles */,
+				9296259A1E50ADDA006D104E /* VVISFKit.framework in CopyFiles */,
 				4D508D34156E7076531D9084 /* Syphon.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +84,12 @@
 		71FFD50EA75BCC76F0C58D12 /* SyphonNameboundClient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SyphonNameboundClient.h; path = ../../../addons/ofxSyphon/libs/Syphon/src/SyphonNameboundClient.h; sourceTree = SOURCE_ROOT; };
 		75EDE0F944593EF8C610B0A1 /* stb_textedit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stb_textedit.h; path = ../../../addons/ofxImGui/libs/imgui/src/stb_textedit.h; sourceTree = SOURCE_ROOT; };
 		80F80BA4DD89C624504E035E /* stb_truetype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stb_truetype.h; path = ../../../addons/ofxImGui/libs/imgui/src/stb_truetype.h; sourceTree = SOURCE_ROOT; };
+		9296258F1E50ADCA006D104E /* DDMathParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DDMathParser.framework; path = libs/DDMathParser.framework; sourceTree = "<group>"; };
+		929625901E50ADCA006D104E /* VVBasics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VVBasics.framework; path = libs/VVBasics.framework; sourceTree = "<group>"; };
+		929625911E50ADCA006D104E /* VVBufferPool.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VVBufferPool.framework; path = libs/VVBufferPool.framework; sourceTree = "<group>"; };
+		929625921E50ADCA006D104E /* VVISFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VVISFKit.framework; path = libs/VVISFKit.framework; sourceTree = "<group>"; };
+		9296259C1E50AEB9006D104E /* ISFScene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; path = ISFScene.h; sourceTree = "<group>"; };
+		9296259E1E50AFF7006D104E /* ISFScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISFScene.m; sourceTree = "<group>"; };
 		92ED8E0A1E4F910300203D0C /* BaseEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BaseEngine.cpp; path = ../../../addons/ofxImGui/src/BaseEngine.cpp; sourceTree = "<group>"; };
 		92ED8E0B1E4F910300203D0C /* BaseEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseEngine.h; path = ../../../addons/ofxImGui/src/BaseEngine.h; sourceTree = "<group>"; };
 		92ED8E0C1E4F910300203D0C /* BaseTheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BaseTheme.cpp; path = ../../../addons/ofxImGui/src/BaseTheme.cpp; sourceTree = "<group>"; };
@@ -107,8 +127,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929625951E50ADCA006D104E /* VVBufferPool.framework in Frameworks */,
+				929625931E50ADCA006D104E /* DDMathParser.framework in Frameworks */,
 				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
 				E1A3FD40C8BCD507345F1126 /* Syphon.framework in Frameworks */,
+				929625961E50ADCA006D104E /* VVISFKit.framework in Frameworks */,
+				929625941E50ADCA006D104E /* VVBasics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +306,16 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				9296259C1E50AEB9006D104E /* ISFScene.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				9296259E1E50AFF7006D104E /* ISFScene.m */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				92ED8E1F1E4FA6D100203D0C /* GuiTheme.h */,
+				9296258F1E50ADCA006D104E /* DDMathParser.framework */,
+				929625901E50ADCA006D104E /* VVBasics.framework */,
+				929625911E50ADCA006D104E /* VVBufferPool.framework */,
+				929625921E50ADCA006D104E /* VVISFKit.framework */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -386,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9296259D1E50AEDA006D104E /* ISFScene.h in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				5C2607C471F8D48C0036C56E /* imgui.cpp in Sources */,
@@ -397,6 +428,7 @@
 				92ED8E1A1E4F910300203D0C /* BaseTheme.cpp in Sources */,
 				1F558B76FB3412843DDAA031 /* ofxSyphonClient.mm in Sources */,
 				8D60C222CBD3F869382832E9 /* ofxSyphonServer.mm in Sources */,
+				9296259F1E50AFF7006D104E /* ISFScene.m in Sources */,
 				11DF9AB1B4EAA63E3B190CA0 /* ofxSyphonServerDirectory.mm in Sources */,
 				92ED8E191E4F910300203D0C /* BaseEngine.cpp in Sources */,
 				C9109422648B170B07A778CF /* SyphonNameboundClient.m in Sources */,
@@ -447,6 +479,7 @@
 					../../../addons/ofxSyphon/libs/Syphon/src,
 					../../../addons/ofxSyphon/src,
 				);
+				LD_RUNPATH_SEARCH_PATHS = "\"@loader_path/../Frameworks\" \"@executable_path/../Frameworks\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CPLUSPLUSFLAGS = (
@@ -490,6 +523,7 @@
 					../../../addons/ofxSyphon/libs/Syphon/src,
 					../../../addons/ofxSyphon/src,
 				);
+				LD_RUNPATH_SEARCH_PATHS = "\"@loader_path/../Frameworks\" \"@executable_path/../Frameworks\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
@@ -509,6 +543,7 @@
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					../../../addons/ofxSyphon/libs/Syphon/lib/osx,
+					"$(PROJECT_DIR)/src/libs",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -547,6 +582,7 @@
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					../../../addons/ofxSyphon/libs/Syphon/lib/osx,
+					"$(PROJECT_DIR)/src/libs",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;

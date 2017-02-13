@@ -33,4 +33,7 @@ public:
 	
 	ofxSyphonServerDirectory syphonDir;
 	
+	
+	ofDirectory *isfDir;
+	
 };
